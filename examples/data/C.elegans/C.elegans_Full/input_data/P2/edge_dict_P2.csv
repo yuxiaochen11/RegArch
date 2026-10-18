@@ -1,0 +1,5 @@
+Parent,Child,Length
+P2,D-,0.7063
+P2,C,0.08
+C,hyp,0.5278
+C,body_muscle,0.5599

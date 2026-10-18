@@ -1,0 +1,11 @@
+replicate	condition	requested_coverage	requested_correctness	actual_coverage	actual_correctness	nonzero_prior_edges
+lineage_signal_10leaf_rep_001	full			1.0	0.24778761061946902	565
+lineage_signal_10leaf_rep_002	full			0.9938650306748467	0.2793103448275862	580
+lineage_signal_10leaf_rep_003	full			0.9940828402366864	0.28865979381443296	582
+lineage_signal_10leaf_rep_004	full			0.9942857142857143	0.2744479495268139	634
+lineage_signal_10leaf_rep_005	full			0.9943502824858758	0.28205128205128205	624
+lineage_signal_10leaf_rep_006	full			0.994475138121547	0.29654036243822074	607
+lineage_signal_10leaf_rep_007	full			1.0	0.3140794223826715	554
+lineage_signal_10leaf_rep_008	full			0.9939393939393939	0.2444113263785395	671
+lineage_signal_10leaf_rep_009	full			0.9933333333333333	0.2434640522875817	612
+lineage_signal_10leaf_rep_010	full			0.9942528735632183	0.2917369308600337	593

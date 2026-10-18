@@ -1,0 +1,7 @@
+Parent,Child,Length
+grn0,grn1,0.4
+grn0,grn2,0.1
+grn1,grn3,0.6
+grn1,grn4,0.6
+grn2,grn5,0.9
+grn2,grn6,0.9

@@ -1,0 +1,11 @@
+Parent,Child,Length
+ABprp,ABprppa-,0.7592
+ABprp,ABprpa,0.1
+ABpra,ABprap,0.1967
+ABpra,ABpraa-,0.767
+ABpr,ABprp,0.0733
+ABpr,ABpra,0.0733
+ABprpa,ABprpap-,0.6253
+ABprpa,ABprpaa-,0.633
+ABprap,ABprappa-,0.2426
+ABprap,ABprapa-,0.8089

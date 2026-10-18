@@ -1,0 +1,101 @@
+{
+  "GENIE3": {
+    "output_glob": "method_outputs/raw/GENIE3/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["TF", "regulator"],
+      "target": ["target", "Target"],
+      "score": ["importance", "score"],
+      "sign": ["importance", "score"]
+    }
+  },
+  "GRNBoost": {
+    "output_glob": "method_outputs/raw/GRNBoost/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["TF", "regulator"],
+      "target": ["target", "Target"],
+      "score": ["importance", "score"],
+      "sign": ["importance", "score"]
+    }
+  },
+  "SCENIC": {
+    "output_glob": "method_outputs/raw/SCENIC/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["TF", "regulator", "source"],
+      "target": ["target", "Target", "gene"],
+      "score": ["score", "importance", "weight"],
+      "sign": ["correlation", "score", "weight"]
+    }
+  },
+  "Pando": {
+    "output_glob": "method_outputs/raw/Pando/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["tf", "TF", "regulator", "source"],
+      "target": ["target", "Target", "gene"],
+      "score": ["estimate", "score", "weight"],
+      "sign": ["estimate", "score", "weight"]
+    }
+  },
+  "GRaNIE": {
+    "output_glob": "method_outputs/raw/GRaNIE/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["TF", "regulator", "source"],
+      "target": ["target", "Target", "gene"],
+      "score": ["score", "weight", "correlation"],
+      "sign": ["correlation", "score", "weight"]
+    }
+  },
+  "CellOracle": {
+    "output_glob": "method_outputs/raw/CellOracle/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["source", "regulator", "TF"],
+      "target": ["target", "Target"],
+      "score": ["coef_mean", "coef_abs", "score", "weight"],
+      "sign": ["coef_mean", "coefficient", "weight"]
+    }
+  },
+  "FigR": {
+    "output_glob": "method_outputs/raw/FigR/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["Motif", "TF", "regulator"],
+      "target": ["DORC", "Target", "target"],
+      "score": ["Score", "score"],
+      "sign": ["Score", "score"]
+    }
+  },
+  "SCENICplus": {
+    "output_glob": "method_outputs/raw/SCENICplus/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["TF", "transcription_factor", "regulator"],
+      "target": ["Gene", "target_gene", "target"],
+      "score": ["importance", "score", "rho"],
+      "sign": ["rho", "correlation", "score"]
+    }
+  },
+  "scMTNI": {
+    "output_glob": "method_outputs/raw/scMTNI/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["regulator", "TF", "source"],
+      "target": ["target", "Target"],
+      "score": ["weight", "score", "probability"],
+      "sign": ["weight", "score"]
+    }
+  },
+  "LINGER": {
+    "output_glob": "method_outputs/raw/LINGER/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["TF", "regulator", "source"],
+      "target": ["Target", "target", "gene"],
+      "score": ["Score", "score", "weight"],
+      "sign": ["Score", "score", "weight"]
+    }
+  },
+  "Dictys": {
+    "output_glob": "method_outputs/raw/Dictys/{cell_type}*.tsv",
+    "columns": {
+      "regulator": ["regulator", "source", "TF"],
+      "target": ["target", "Target"],
+      "score": ["weight", "score", "importance"],
+      "sign": ["weight", "score"]
+    }
+  }
+}

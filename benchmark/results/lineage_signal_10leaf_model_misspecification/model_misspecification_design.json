@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "analysis": "fixed-leaf-weight ancestral model-misspecification",
+  "terminal_evidence_source": "simulated true leaf GRN weights",
+  "terminal_evidence_mapping": {
+    "edge_threshold": 0.1,
+    "reference_edge_temperature": 0.03,
+    "reference_sign_temperature": 0.05
+  },
+  "reference_condition": "true Q and branch lengths with the unperturbed edge-specific mean-leaf ATAC root prior",
+  "root_prior": "edge-specific mean-leaf ATAC prior",
+  "root_prior_mean_definition": "mean over eligible non-self regulator-target edges",
+  "condition_count": 22,
+  "replicate_count": 10,
+  "interpretation": "This analysis isolates P(S_ancestors | D_leaves, T, Q, pi_root); it does not refit RNA regression coefficients.",
+  "undefined_metric_note": "Sign accuracy or coverage is structurally undefined when a node-condition pair recovers no true edge with an available sign; primary AUPRC and signed precision at true K remain defined."
+}

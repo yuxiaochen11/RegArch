@@ -1,0 +1,61 @@
+{
+  "name": "lineage_signal_15leaf",
+  "seed": 20260631,
+  "replicates": 10,
+  "fate_map": {
+    "node_count": 29,
+    "branch_lengths": [
+      0.3, 0.3,
+      0.3, 0.3, 0.3, 0.3,
+      0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.4,
+      0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2
+    ],
+    "wrong_fate_map_mode": "paired_rotation"
+  },
+  "grn": {
+    "regulator_count": 8,
+    "target_count": 20,
+    "density": 0.08,
+    "positive_fraction": 0.6,
+    "weight_mean": 1.0,
+    "weight_sd": 0.25,
+    "weight_min": 0.2,
+    "weight_max": 1.0,
+    "loss_rate": 0.7,
+    "gain_rate": 0.06,
+    "sign_switch_rate": 0.08,
+    "weight_drift_sd": 0.08,
+    "ensure_each_target": true,
+    "allow_self_regulation": false
+  },
+  "regions": {
+    "promoter_per_target": 1,
+    "enhancer_min": 2,
+    "enhancer_max": 3,
+    "decoy_min": 1,
+    "decoy_max": 1,
+    "regulatory_regions_min": 1,
+    "regulatory_regions_max": 2,
+    "motif_true_positive_rate": 0.85,
+    "motif_false_positive_rate": 0.03,
+    "link_false_positive_rate": 0.03
+  },
+  "observations": {
+    "cells_per_leaf": 30,
+    "rna_library_mean": 5000.0,
+    "rna_library_sd": 0.25,
+    "rna_dispersion": 12.0,
+    "regulatory_scale": 0.55,
+    "regulator_noise_sd": 0.65,
+    "target_noise_sd": 0.25,
+    "rna_dropout_rate": 0.2,
+    "atac_depth_sd": 0.3,
+    "active_peak_alpha": 8.0,
+    "active_peak_beta": 2.0,
+    "inactive_peak_alpha": 2.0,
+    "inactive_peak_beta": 8.0,
+    "decoy_peak_alpha": 1.0,
+    "decoy_peak_beta": 12.0,
+    "metacells_per_leaf": 3
+  }
+}

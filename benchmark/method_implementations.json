@@ -1,0 +1,80 @@
+{
+  "RegArch": {
+    "execution": "native",
+    "implementation": "repository source",
+    "inputs": "shared RNA, ATAC-derived prior, and full fate map",
+    "limitation": ""
+  },
+  "Random": {
+    "execution": "negative_control",
+    "implementation": "seeded independent Uniform(0,1) score for every edge",
+    "inputs": "shared evaluation edge identifiers only; no truth labels or observations",
+    "limitation": "expected AUPRC equals edge prevalence and expected AUROC is 0.5"
+  },
+  "CellOracle": {
+    "execution": "native_core",
+    "implementation": "CellOracle 0.18.0 Net bagging-ridge",
+    "inputs": "shared leaf RNA and ATAC/motif-derived base GRN",
+    "limitation": "run independently per leaf"
+  },
+  "SCENIC": {
+    "execution": "synthetic_resource_adapter",
+    "implementation": "GRNBoost adjacency followed by SCENIC-style cis pruning",
+    "inputs": "shared leaf RNA, synthetic motif hits, peak-gene links, and ATAC",
+    "limitation": "not the full pySCENIC cisTarget/AUCell workflow; synthetic TFs have no genome ranking database"
+  },
+  "SCENICplus": {
+    "execution": "native_builder_adapter",
+    "implementation": "SCENIC+ 1.0a2 build_grn with a truth-blind motif/region/gene candidate eGRN fallback",
+    "inputs": "shared leaf RNA/ATAC and generated cistromes/region-gene links",
+    "limitation": "small synthetic networks may yield no native GSEA-retained eRegulons; fallback scores combine only the supplied motif, region-gene, and TF-gene evidence"
+  },
+  "GENIE3": {
+    "execution": "native_core",
+    "implementation": "Arboreto random-forest inference",
+    "inputs": "shared leaf RNA",
+    "limitation": "run independently per leaf"
+  },
+  "GRNBoost": {
+    "execution": "native_core",
+    "implementation": "Arboreto GRNBoost2 stochastic gradient boosting",
+    "inputs": "shared leaf RNA",
+    "limitation": "run independently per leaf"
+  },
+  "FigR": {
+    "execution": "native_core_adapter",
+    "implementation": "FigR 0.1.0 getDORCScores plus synthetic motif scoring",
+    "inputs": "shared paired leaf RNA/ATAC, motif hits, and peak-gene links",
+    "limitation": "synthetic annotations replace organism motif databases"
+  },
+  "Pando": {
+    "execution": "native_core_adapter",
+    "implementation": "Pando 1.1.1 fit_glmnet",
+    "inputs": "shared paired leaf RNA/ATAC and generated motif/link design",
+    "limitation": "synthetic annotations bypass Seurat/Signac genome annotation"
+  },
+  "GRaNIE": {
+    "execution": "method_compatible_adapter",
+    "implementation": "GRaNIE-compatible TF-peak and peak-gene correlation scoring",
+    "inputs": "shared paired leaf RNA/ATAC, motif hits, and peak-gene links",
+    "limitation": "not native GRaNIE object construction because synthetic genes cannot be resolved through Ensembl"
+  },
+  "LINGER": {
+    "execution": "native_core_adapter",
+    "implementation": "LingerGRN LL_net cell_type_specific_trans_reg",
+    "inputs": "shared paired leaf RNA/ATAC and generated TF-region/region-gene matrices",
+    "limitation": "matched-information mode without an external atlas"
+  },
+  "Dictys": {
+    "execution": "native",
+    "implementation": "official lfwa/dictys-cpu network reconstruct",
+    "inputs": "shared leaf RNA and ATAC-derived square edge mask",
+    "limitation": "static reconstruction run independently per leaf"
+  },
+  "scMTNI": {
+    "execution": "native",
+    "implementation": "official scMTNI C++ source",
+    "inputs": "shared leaf RNA, ATAC-derived priors, and a leaf-only projected tree",
+    "limitation": "latent ancestors are omitted because scMTNI requires expression at every supplied tree node"
+  }
+}

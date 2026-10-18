@@ -1,0 +1,4 @@
+condition	factor	fate_map	lineage_weight	atac_weight	root_prior	requested_coverage	requested_correctness	RNA_data	truth_GRN
+full	reference	correct	0.5	1.0	atac			unchanged	unchanged
+no_fate_map	fate_map	none	0.0	1.0	atac			unchanged	unchanged
+wrong_fate_map	fate_map	wrong topology + short branches	0.5	1.0	atac			unchanged	unchanged

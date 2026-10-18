@@ -1,0 +1,13 @@
+Parent,Child,Length
+ABar,ABarp,0.0733
+ABar,ABara,0.0733
+ABarp,ABarpp-,0.7965
+ABarp,ABarpa,0.1
+ABara,ABarap-,0.8798
+ABara,ABaraa,0.1
+ABarpa,ABarpapa-,0.6649
+ABaraap,ABaraapp-,0.6873
+ABarpa,ABarpapp-,0.42
+ABaraap,ABaraapaa-,0.4769
+ABaraa,ABaraaa-,0.7169
+ABaraa,ABaraap,0.0967
