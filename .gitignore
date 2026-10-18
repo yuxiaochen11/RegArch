@@ -25,3 +25,9 @@ benchmark/runs/
 examples/results/**/additional_output/
 examples/results/**/grn_inference_result*/
 docs/_build/
+
+# The simulation demo evaluates against these reference truth matrices.
+!examples/results/simulation/additional_output/
+examples/results/simulation/additional_output/*
+!examples/results/simulation/additional_output/ground_truth_grn/
+!examples/results/simulation/additional_output/ground_truth_grn/*.csv
